@@ -316,7 +316,7 @@ fn version() -> &'static str {
     }
 }
 
-RUST_LOG=debug cargo run --example client -- --socks-server 127.0.0.1:1337 --username Re2nwvZ7JH4K --password DZGQbdvSL -a sea.socks.ipvanish.com -p 1080
+///RUST_LOG=debug cargo run --example client -- --socks-server 127.0.0.1:1337 --username Re2nwvZ7JH4K --password DZGQbdvSL -a sea.socks.ipvanish.com -p 1080
 
 #[derive(Debug, StructOpt)]
 #[structopt(name = "socks5-client", about = "A simple example of a socks5-client.")]
