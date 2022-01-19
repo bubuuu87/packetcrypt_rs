@@ -10,6 +10,9 @@ PacketCrypt proof of work algorithm
 
 [dev-dependencies]
 hex-literal = "0.3"
+env_logger = "0.7"
+structopt = "0.3"
+tokio = { version = "1.12.0", features = ["io-util", "net", "time", "rt-multi-thread", "macros"] }
 
 [dependencies]
 git-version = "0.3"
@@ -23,7 +26,10 @@ packetcrypt-pool = { version = "0.4", path = "packetcrypt-pool" }
 packetcrypt-annmine = { version = "0.4", path = "packetcrypt-annmine" }
 packetcrypt-blkmine = { version = "0.4", path = "packetcrypt-blkmine" }
 packetcrypt-annhandler = { version = "0.4", path = "packetcrypt-annhandler" }
+fast_socks5 = { version = "0.5", path = "fast-socks5" }
 crossbeam-channel = "0.4"
+thiserror = "1.0"
+tokio-stream = "0.1.7"
 log = "0.4"
 clap = "2.33"
 num_cpus = "1.13"
