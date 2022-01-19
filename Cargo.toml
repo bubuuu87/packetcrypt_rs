@@ -26,7 +26,7 @@ packetcrypt-pool = { version = "0.4", path = "packetcrypt-pool" }
 packetcrypt-annmine = { version = "0.4", path = "packetcrypt-annmine" }
 packetcrypt-blkmine = { version = "0.4", path = "packetcrypt-blkmine" }
 packetcrypt-annhandler = { version = "0.4", path = "packetcrypt-annhandler" }
-fast_socks5 = { version = "0.5", path = "fast-socks5" }
+fast-socks5 = { version = "0.5", path = "fast-socks5" }
 crossbeam-channel = "0.4"
 thiserror = "1.0"
 tokio-stream = "0.1.7"
