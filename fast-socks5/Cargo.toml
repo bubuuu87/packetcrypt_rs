@@ -1,0 +1,30 @@
+[package]
+name = "fast-socks5"
+version = "0.5.0"
+authors = ["Jonathan Dizdarevic <dizzda@gmail.com>"]
+edition = "2018"
+license = "MIT"
+description = "Fast SOCKS5 client/server implementation written in Rust async/.await (with async-std)"
+repository = "https://github.com/dizda/fast-socks5"
+
+[dependencies]
+log = "0.4"
+tokio = { version = "1.12.0", features = ["io-util", "net", "time"] }
+anyhow = "1.0"
+thiserror = "1.0"
+tokio-stream = "0.1.7"
+
+# Dependencies for examples/
+[dev-dependencies]
+env_logger = "0.7"
+structopt = "0.3"
+tokio = { version = "1.12.0", features = ["io-util", "net", "time", "rt-multi-thread", "macros"] }
+
+[[example]]
+name = "server"
+
+[[example]]
+name = "client"
+
+[[example]]
+name = "simple_tcp_server"
